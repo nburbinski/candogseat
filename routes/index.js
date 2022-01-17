@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   const foods = await Food.find().lean();
   foods.sort((foodA, foodB) => (foodA.count > foodB.count ? -1 : 1));
 
-  res.render("main", {
+  res.render("foods", {
     foods: foods,
   });
 });
@@ -19,11 +19,18 @@ router.get("/search", async (req, res) => {
   const name = req.query.name;
   try {
     let food = await Food.findOne({ name: name });
-    res.render("main", {
-      foods: food,
-    });
+
+    if (food)
+      res.render("food", {
+        name: name,
+        edible: food.edible,
+      });
+    else {
+      res.render("notFound", {
+        name: name,
+      });
+    }
   } catch (err) {
-    console.log(err);
     res.status(400).json({ msg: `${name} not currently listed ` });
   }
 });
