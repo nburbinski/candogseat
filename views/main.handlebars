@@ -1,16 +1,17 @@
-<div>
-  <form>
-    <div class="input-field search">
-      <input id="search" type="search" placeholder="Type food here" required />
-      <i class="material-icons">close</i>
-    </div>
-  </form>
-</div>
-<div>
+<div class="row">
   {{#if foods}}
     {{#each foods}}
-      <p>{{name}}</p>
-      <p>{{edible}}</p>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-content center-align">
+            <p>{{name}}</p>
+          </div>
+          <div class="card-content center-align">
+            <p>{{edible}}</p>
+          </div>
+        </div>
+      </div>
+
     {{/each}}
   {{else}}
     <p>

@@ -2,7 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Food = require("../../models/FoodSchema");
 
-// Send all foods
+// @desc Send all foods
+// @route GET /api/foods
 router.get("/", async (req, res) => {
   const foods = await Food.find().lean();
   res.send(foods);
@@ -11,10 +12,11 @@ router.get("/", async (req, res) => {
   });
 });
 
-// Get one food
-router.get("/:name", async (req, res) => {
+// @desc Search one food
+// @route GET /api/foods/:name
+router.get("/", async (req, res) => {
   const name = req.params.name;
-
+  console.log(req.body);
   try {
     let food = await Food.findOne({ name: name });
 
@@ -26,11 +28,13 @@ router.get("/:name", async (req, res) => {
   }
 });
 
-// Create new food
+// @desc Create new food
+// @route POST /api/foods
 router.post("/", async (req, res) => {
   const newFood = {
     name: req.body.name,
-    poison: req.body.poison,
+    edible: req.body.edible,
+    count: 0,
   };
 
   try {

@@ -24,6 +24,21 @@
   <body>
     <div class="container">
       <h1>Can Dogs Eat ___ ? </h1>
+      <div>
+        <form action="/search/" method="GET">
+          <div class="input-field search">
+            <input
+              name="name"
+              id="name"
+              value="{{name}}"
+              type="search"
+              placeholder="Type food here"
+              required
+            />
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
       {{{body}}}
     </div>
   </body>

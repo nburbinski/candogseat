@@ -1,0 +1,19 @@
+<div class="row">
+  {{#if food}}
+    <div class="col">
+      <div class="card">
+        <div class="card-content center-align">
+          <p>{{name}}</p>
+        </div>
+        <div class="card-content center-align">
+          <p>{{edible}}</p>
+        </div>
+      </div>
+    </div>
+
+  {{else}}
+    <p>
+      Food not available
+    </p>
+  {{/if}}
+</div>
