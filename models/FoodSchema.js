@@ -5,7 +5,7 @@ const FoodSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  poison: {
+  edible: {
     type: String,
     enum: ["YES", "NO", "MAYBE"],
     required: true,
