@@ -10,6 +10,11 @@ const FoodSchema = new mongoose.Schema({
     enum: ["YES", "NO", "MAYBE"],
     required: true,
   },
+  count: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
 });
 
 module.exports = mongoose.model("Food", FoodSchema);

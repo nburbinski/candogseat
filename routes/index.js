@@ -6,6 +6,8 @@ const Food = require("../models/FoodSchema");
 // @route GET /
 router.get("/", async (req, res) => {
   const foods = await Food.find().lean();
+  foods.sort((foodA, foodB) => (foodA.count > foodB.count ? -1 : 1));
+
   res.render("main", {
     foods: foods,
   });
