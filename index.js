@@ -37,7 +37,7 @@ app.set("views", "./views");
 // Routes
 app.use("/", require("./routes/index"));
 
-app.use("/api/members", require("./routes/api/members"));
+app.use("/api/foods", require("./routes/api/foods"));
 
 app.listen(PORT, () =>
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}!`)
