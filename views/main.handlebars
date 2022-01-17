@@ -6,3 +6,15 @@
     </div>
   </form>
 </div>
+<div>
+  {{#if foods}}
+    {{#each foods}}
+      <p>{{name}}</p>
+      <p>{{edible}}</p>
+    {{/each}}
+  {{else}}
+    <p>
+      Foods not available
+    </p>
+  {{/if}}
+</div>
