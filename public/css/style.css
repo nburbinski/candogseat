@@ -1,0 +1,38 @@
+.description {
+  font-size: 1.5em;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-times {
+  color: red;
+}
+
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.edible {
+  text-transform: uppercase;
+}

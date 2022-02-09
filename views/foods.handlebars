@@ -2,16 +2,22 @@
 <div class="row">
   {{#if foods}}
     {{#each foods}}
+      {{!-- <a class="" href="/search/?name={{name}}"> --}}
       <div class="col s12 m4">
-        <div class="card">
+        <div class="card card-title hoverable">
           <div class="card-content center-align">
-            <p>{{name}}</p>
+            <span>{{#color edible}}{{/color}}</span>
+            <p class="title card-title activator">{{name}}</p>
           </div>
-          <div class="card-content center-align">
-            <p>{{edible}}</p>
+          <div class="card-reveal">
+            <span
+              class="title card-title grey-text text-darken-4"
+            >{{name}}</span>
+            <p>{{description}}</p>
           </div>
         </div>
       </div>
+      {{! </a> }}
 
     {{/each}}
   {{else}}
