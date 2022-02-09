@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
-const { engine } = require("express-handlebars");
+const expressHbs = require("express-handlebars");
 const connectDB = require("./config/db");
 
 // Load config
@@ -27,12 +27,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Handlebars
-app.engine("handlebars", engine());
+const hbs = expressHbs.create({});
+app.engine("handlebars", expressHbs.engine());
 app.set("view engine", "handlebars");
 app.set("views", "./views");
 
+// HB Helpers
+hbs.handlebars.registerHelper("color", function (options) {
+  if (options == "yes") return "<i class='fas fa-check fa-2x '></i>";
+  else return "<i class='fas fa-times fa-2x'></i>";
+});
+
 // Set a static folder
-// app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
 app.use("/", require("./routes/index"));
