@@ -1,0 +1,137 @@
+[
+  {
+    "name": "almonds",
+    "edible": "no",
+    "count": 0
+  },
+  {
+    "name": "bread",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "cashews",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "cheese",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "chocolate",
+    "edible": "no",
+    "count": 0
+  },
+  {
+    "name": "cinnamon",
+    "edible": "no",
+    "count": 0
+  },
+  {
+    "name": "coconut",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "corn",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "eggs",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "fish",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "garlic",
+    "edible": "no",
+    "count": 0
+  },
+  {
+    "name": "ham",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "honey",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "ice cream",
+    "edible": "no",
+    "count": 0
+  },
+  {
+    "name": "macadamia nuts",
+    "edible": "no",
+    "count": 0
+  },
+  {
+    "name": "milk",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "peanut butter",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "peanuts",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "popcorn",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "pork",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "quinoa",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "salmon",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "shrimp",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "tuna",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "turkey",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "wheat/grains",
+    "edible": "yes",
+    "count": 0
+  },
+  {
+    "name": "yogurt",
+    "edible": "yes",
+    "count": 0
+  }
+]
